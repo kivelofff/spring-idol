@@ -19,9 +19,21 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         </aop:aspect>
     </aop:config>
 
+
+    <aop:config>
+        <aop:aspect ref="gudini">
+            <aop:pointcut id="thinking" expression="execution(* org.example.springidol.Thinker.thinkOfSomething(String)) and args(thoughts)"/>
+            <aop:before pointcut-ref="thinking" method="captureThoughts" arg-names="thoughts"/>
+        </aop:aspect>
+    </aop:config>
+
     <bean id="hulio" class="org.example.springidol.Juggler">
         <constructor-arg name="beanBags" value="16"/>
     </bean>
 
     <bean id="audience" class="org.example.springidol.Audience"/>
+
+    <bean id="gudini" class="org.example.springidol.Magician"/>
+
+    <bean id="noob" class="org.example.springidol.Volunteer"/>
 </beans>

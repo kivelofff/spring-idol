@@ -10,6 +10,12 @@ public class ApplicationClass {
 
         Performer performer = (Performer) context.getBean("hulio");
         performer.perform();
+
+        Thinker thinker = (Thinker) context.getBean("noob");
+        MindCapturer mc = (MindCapturer) context.getBean("gudini");
+
+        thinker.thinkOfSomething("blat");
+        System.out.println("Checking volunteer: " + thinker.getThoughts());
     }
 
 
