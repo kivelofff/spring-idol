@@ -36,4 +36,8 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     <bean id="gudini" class="org.example.springidol.Magician"/>
 
     <bean id="noob" class="org.example.springidol.Volunteer"/>
+
+    <bean id="hobodel" class="org.example.springidol.Acrobat">
+        <constructor-arg name="hobaAmount" value="3"/>
+    </bean>
 </beans>
