@@ -16,6 +16,14 @@ public class ApplicationClass {
 
         thinker.thinkOfSomething("blat");
         System.out.println("Checking volunteer: " + thinker.getThoughts());
+
+        Performer acrobat = (Performer) context.getBean("hobodel");
+        acrobat.perform();
+        Researcher acrobatResearcher = (Researcher) context.getBean("hobodel");
+        acrobatResearcher.rsearch();
+
+        Researcher researcher = (Researcher) context.getBean("stupid-laborant");
+        researcher.rsearch();
     }
 
 
