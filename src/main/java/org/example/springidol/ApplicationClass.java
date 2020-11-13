@@ -20,10 +20,13 @@ public class ApplicationClass {
         Performer acrobat = (Performer) context.getBean("hobodel");
         acrobat.perform();
         Researcher acrobatResearcher = (Researcher) context.getBean("hobodel");
-        acrobatResearcher.rsearch();
+        acrobatResearcher.rsearch("sample1");
 
         Researcher researcher = (Researcher) context.getBean("stupid-laborant");
-        researcher.rsearch();
+        researcher.rsearch("sample2");
+
+        Cleaner poorResearcher = (Cleaner) context.getBean("stupid-laborant");
+        poorResearcher.clean();
     }
 
 

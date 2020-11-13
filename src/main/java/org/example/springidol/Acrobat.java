@@ -1,7 +1,7 @@
 package org.example.springidol;
 
 public class Acrobat implements Performer{
-    private int hobaAmount;
+    private int hobaAmount=1;
 
     public Acrobat(int hobaAmount) {
         this.hobaAmount = hobaAmount;

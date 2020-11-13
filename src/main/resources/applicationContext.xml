@@ -54,4 +54,8 @@ https://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
     </aop:config>
 
     <bean id="stebel" class="org.example.springidol.ScientificBoss"/>
+
+    <bean id="lab-rat" class="org.example.springidol.SamplePreparator"/>
+
+    <bean class="org.example.springidol.CleanerIntroducer"/>
 </beans>
